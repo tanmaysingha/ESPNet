@@ -1,8 +1,25 @@
-# Efficient Segmentation Pyramid Network (ESPNet) 
-This reposiotory is for "ESPNet", an efficient scalable scene segmentation model which uses Pyramid Pooling Module (PPM) as a global contextual prior for feature extraction. By exploiting the scalable feature of EfficientNet models, we designed Base ESPNet S0, S1 and S2. We noticed that due to scaling ESPNet from S0 to S2, validation mIoU has increased by 4.4%. But scaling process also increases computational cost due to increase of number of parameters and FLOPS. That is why; instead of scaling up further, we introduced a final ESPNet. Detail description of the models will be available upon acceptance. Few results are provided in the "Results" folders.  
-# Requirements for Project
-TensorFlow 2.1 (Mainly testing out its capabilities at this time)
-This requires CUDA >= 10.1
-TensorRT will require an NVIDIA GPU with Tensor Cores (Project will use different GPUs)
-On the Jetson AGX Xavier its TensorRT version 6.
-Python >= 3.7
+# Efficient Segmentation Pyramid Network
+Semantic or Pixel-wise Segmentation is the process of automatically applying a class or label, designated by a dataset, to each pixel in an image.These labels or classes could include people, car, flower, building, furniture, and etc. To efficiently apply a class or label to each pixel of an image, we are introducing an efficient and scalable network, call "Efficient Segmentation Pyramid Network (ESPNet)". By exploiting the scalable feature of EfficientNet models, we designed Base ESPNet S0, S1 and S2. We noticed that due to scaling ESPNet from S0 to S2, validation mIoU has increased by 4.4%. But scaling process also increases computational cost due to increase of number of parameters and FLOPS. That is why; instead of scaling up further, we introduce final ESPNet. Few predicted results are given in the "Results" folder. Details will be available upon acceptance of research paper.
+
+## Datasets
+For this research work, we have used cityscapes benchmark datasets.
+* Cityscapes - will require an account. https://www.cityscapes-dataset.com/downloads/              
+
+## Metrics
+To understand the metrics used here, please goto: https://www.cityscapes-dataset.com/benchmarks/#pixel-level-results
+
+## Transfer Learning
+Some models require the use of ImageNet pretrained models to initialize their weights
+
+## Requirements for Project
+* TensorFlow 2.1
+  * This requires CUDA >= 10.1
+  * TensorRT will require an NVIDIA GPU with Tensor Cores.
+* Keras 2.3.1
+* Python >= 3.7
+
+## Results
+Size of image in cityscapes dataset is 1024x2048px. Base and Final ESPNet models accept 512x512px size of input. Therefore, size of all predicted output is 512x512px. 
+![deeplab](https://github.com/tanmaysingha/ESPNet/blob/master/Results/Final_ESPNet_Results/result1.png?raw=true)
+![fastscnn](https://github.com/tanmaysingha/ESPNet/blob/master/Results/Final_ESPNet_Results/result2.png?raw=true)
+
