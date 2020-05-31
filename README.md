@@ -21,7 +21,7 @@ For performance comparison, we trained few off-line and real-time existing model
 ## Results
 Size of image in cityscapes dataset is 1024x2048px. Base and Final ESPNet models accept 512x512px size of input. Therefore, size of all predicted output is 512x512px. 
 
-!(https://github.com/tanmaysingha/ESPNet/blob/master/Results/Final_ESPNet_Results/result1.png?raw=true)
+![Results](https://github.com/tanmaysingha/ESPNet/blob/master/Results/Final_ESPNet_Results/result1.png?raw=true)
 
 !(https://github.com/tanmaysingha/ESPNet/blob/master/Results/Final_ESPNet_Results/result2.png?raw=true)
 
