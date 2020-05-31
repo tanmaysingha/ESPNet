@@ -23,5 +23,5 @@ Size of image in cityscapes dataset is 1024x2048px. Base and Final ESPNet models
 
 ![Results](https://github.com/tanmaysingha/ESPNet/blob/master/Results/Final_ESPNet_Results/result1.png?raw=true)
 
-!(https://github.com/tanmaysingha/ESPNet/blob/master/Results/Final_ESPNet_Results/result2.png?raw=true)
+![Results](https://github.com/tanmaysingha/ESPNet/blob/master/Results/Final_ESPNet_Results/result2.png?raw=true)
 
