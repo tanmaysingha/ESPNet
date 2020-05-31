@@ -19,9 +19,21 @@ For performance comparison, we trained few off-line and real-time existing model
 * Python >= 3.7
 
 ## Results
-Size of image in cityscapes dataset is 1024x2048px. Base and Final ESPNet models accept 512x512px size of input. Therefore, size of all predicted output is 512x512px. 
+Size of image in cityscapes dataset is 1024x2048px. But ESPNets accept 512x512px input. Therefore, all models are trained with 512x512px size of input and results are generated of same size. 
+### Separable UNet
 
-![Results](https://github.com/tanmaysingha/ESPNet/blob/master/Results/Final_ESPNet_Results/result1.png?raw=true)
 
+### DeepLabV3+
+
+
+### Bayesian SegNet
+
+
+### FAST-SCNN
+
+
+### Final ESPNet
+![Final ESPNet](https://github.com/tanmaysingha/ESPNet/blob/master/Results/Final_ESPNet_Results/result1.png?raw=true)
+
+### Base ESPNet
 ![Results](https://github.com/tanmaysingha/ESPNet/blob/master/Results/Final_ESPNet_Results/result2.png?raw=true)
-
