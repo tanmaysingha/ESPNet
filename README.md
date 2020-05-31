@@ -15,11 +15,12 @@ For performance comparison, we trained few off-line and real-time existing model
 * TensorFlow 2.1
   * This requires CUDA >= 10.1
   * TensorRT will require an NVIDIA GPU with Tensor Cores.
+  * Horovod framework (for effective utilization of resources and speed up GPUs)
 * Keras 2.3.1
 * Python >= 3.7
 
 ## Results
-Size of image in cityscapes dataset is 1024x2048px. But ESPNets accept 512x512px input. Therefore, all models are trained with 512x512px size of input and results are generated of same size. 
+Size of image in cityscapes dataset is 1024x2048px. But ESPNets accept 512x512px input. Therefore, all models are trained with 512x512px size of input and predicted images are of same size. 
 ### Separable UNet
 ![Separable UNet](https://github.com/tanmaysingha/ESPNet/blob/master/Results/other_models/Separable_UNet.png?raw=true)
 
