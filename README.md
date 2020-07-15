@@ -9,7 +9,7 @@ For this research work, we have used cityscapes benchmark datasets.
 To understand the metrics used for model performance evaluation, please  refer here: https://www.cityscapes-dataset.com/benchmarks/#pixel-level-results
 
 ## Transfer Learning
-For performance comparison, we trained few off-line and real-time existing models under same configuration and compared their performance with ESPNet. Some existing models require the use of ImageNet pretrained models to initialize their weights. DEtails will be given soon.
+For performance comparison, we trained few off-line and real-time existing models under same configuration and compared their performance with ESPNet. Some existing models require the use of ImageNet pretrained models to initialize their weights. Details will be given soon.
 
 ## Requirements for Project
 * TensorFlow 2.1
