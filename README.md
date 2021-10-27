@@ -54,6 +54,6 @@ If FANet is useful for your research work, please consider for citing the paper:
   year={2020},
   organization={Springer}
 }
-
+```
 Refer the following link for the paper:
 https://link.springer.com/chapter/10.1007/978-3-030-63820-7_44
