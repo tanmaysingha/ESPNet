@@ -38,3 +38,19 @@ Size of image in cityscapes dataset is 1024x2048px. But ESPNets accept 512x512px
 
 ### Final ESPNet
 ![Final ESPNet](https://github.com/tanmaysingha/ESPNet/blob/master/Results/Final_ESPNet_Results/result1.png?raw=true)
+
+Refer the following link for the paper:
+https://link.springer.com/chapter/10.1007/978-3-030-63820-7_44
+
+### Citation
+ ```yaml
+cff-version: 1.2.0
+If FANet is useful for your research work, please consider for citing the paper:
+@inproceedings{singha2020efficient,
+  title={Efficient Segmentation Pyramid Network},
+  author={Singha, Tanmay and Pham, Duc-Son and Krishna, Aneesh and Dunstan, Joel},
+  booktitle={Proceedings of the International Conference on Neural Information Processing},
+  pages={386--393},
+  year={2020},
+  organization={Springer}
+}
