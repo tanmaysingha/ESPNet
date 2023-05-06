@@ -498,7 +498,7 @@ def EfficientNet(
     ff_layer2 = tf.keras.activations.relu(ff_layer2)
     ff_layer2 = tf.keras.layers.Conv2D(128, 1, 1, padding='same', activation=None)(ff_layer2)
     
-    ff_layer1 = tf.keras.layers.Conv2D(128, 1, 1, padding='same', activation=None)(ff_layer1)
+    ff_layer1 = tf.keras.layers.Conv2D(128, 1, 1, padding='same', activation=None)(ff_layer2)
 
     ff_final = tf.keras.layers.add([ff_layer1, ff_layer2])
     ff_final = tf.keras.layers.BatchNormalization()(ff_final)
@@ -515,7 +515,7 @@ def EfficientNet(
     classifier = tf.keras.activations.relu(classifier)
 
 
-    classifier = conv_block(classifier, 'conv', 20, (1, 1), strides=(1, 1), padding='same', relu=False)
+    classifier = conv_block(classifier, 'conv', 19, (1, 1), strides=(1, 1), padding='same', relu=False)
 
     classifier = tf.keras.layers.Dropout(0.3)(classifier)
 
