@@ -542,6 +542,6 @@ def model(num_classes=19, input_size=(512, 512, 3)):
       include_top=False,
       pooling=None,)  
 
-  fast_scnn = tf.keras.Model(inputs = input_layer , outputs = enet, name = 'Fast_SCNN')
+  Final_ESPNet = tf.keras.Model(inputs = input_layer , outputs = enet, name = 'Final_ESPNet')
 
-  return fast_scnn
+  return Final_ESPNet
